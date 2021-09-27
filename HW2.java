@@ -5,19 +5,11 @@ import java.lang.Math;
 public class HW2 {
     static Scanner sc = new Scanner(System.in);
 
-    /** 
-     * @param a
-     * @param b
-     * @return double
-     */
     // 3.20
     static double task320(double a, double b) {
         return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
     }
     
-    /** 
-     * @return double
-     */
     // 4.2 (a)
     static double task42a() {
         System.out.print("Enter variable x: ");
@@ -29,9 +21,6 @@ public class HW2 {
     }
 
     
-    /** 
-     * @param args
-     */
     public static void main(String[] args) {
         System.out.print("Enter cathetus a: ");
         double a = sc.nextDouble();
