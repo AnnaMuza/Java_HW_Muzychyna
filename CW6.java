@@ -36,6 +36,29 @@ class Class34 {
     }
 }
 
+class Dog {
+    String name, say;
+
+    public Dog() {};
+
+    public Dog(String name, String say) {
+        this.name = name;
+        this.say = say;
+    }
+
+    public void bark() {
+        System.out.println("woof");
+    }
+
+    public void bark(int a) {
+        System.out.println("arf arf");
+    }
+
+    public void bark(String s) {
+        System.out.println("aaauuuuuu");
+    }
+}
+
 
 public class CW6 {
 
@@ -100,6 +123,24 @@ public class CW6 {
     static void task34() {
         Class34 t = new Class34("hello");
     }
+    
+    // 3.5
+    static void task35() {
+        Dog spot = new Dog("Spot", "Ruff!");
+        Dog scruffy = new Dog("Scruffy", "Wurf!");
+        System.out.printf("%s says %s\n%s says %s\n", spot.name, spot.say, scruffy.name, scruffy.say);
+        Dog dog = spot;
+        System.out.println(dog == spot);
+        System.out.println(dog.equals(spot));
+    }
+
+    // 3.6
+    static void task36() {
+        Dog d = new Dog();
+        d.bark();
+        d.bark(1);
+        d.bark("a");
+    }
 
 
     public static void main(String[] args) {
@@ -116,5 +157,7 @@ public class CW6 {
         task32();
         task33();
         task34();
+        task35();
+        task36();
     }  
 }
