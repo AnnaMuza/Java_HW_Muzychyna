@@ -10,18 +10,16 @@ public class Task_14 {
     public static void main(String[] args) {
         Matcher m;
 
-        String A = """
-            1 \\
-            1qwe \\
-            mibegev562@luxiu2.com \\
-            123 \\
-            weyrt2344 \\
-            aqwuyetqa \\
-            qqqqq \\
-            vowamot374@luxiu2.com \\
-            goblin734@algo.com \\
-            iwuery3455 \\
-            """;
+        String A = "1 " +
+            "1qwe " +
+            "mibegev562@luxiu2.com " +
+            "123 " +
+            "weyrt2344 " +
+            "aqwuyetqa " +
+            "qqqqq " +
+            "vowamot374@luxiu2.com " +
+            "goblin734@algo.com " +
+            "iwuery3455 ";
         
         // a)
         System.out.println("Number of words = " + A.split("\\s+").length + "\n");
